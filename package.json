@@ -1,0 +1,33 @@
+{
+  "name": "constants-copier",
+  "version": "0.0.0",
+  "description": "Take constants from one file and copy them to another file",
+  "main": "lib/index.js",
+  "bin": "bin/index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "constants",
+    "copy"
+  ],
+  "author": {
+    "name": "Caleb McHenry",
+    "email": "calebmchenry@gmail.com"
+  },
+  "license": "ISC",
+  "devDependencies": {
+    "@types/jest": "^24.0.19",
+    "@types/node": "^12.11.1",
+    "@typescript-eslint/eslint-plugin": "^2.4.0",
+    "@typescript-eslint/parser": "^2.4.0",
+    "eslint": "^6.1.0",
+    "eslint-config-airbnb-base": "^14.0.0",
+    "eslint-config-prettier": "^6.4.0",
+    "eslint-plugin-import": "^2.18.2",
+    "eslint-plugin-prettier": "^3.1.1",
+    "jest": "^24.9.0",
+    "prettier": "^1.18.2",
+    "typescript": "^3.6.4"
+  }
+}
