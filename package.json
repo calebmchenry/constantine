@@ -1,14 +1,20 @@
 {
   "name": "constantine",
   "version": "0.0.0",
-  "description": "Take constants from one file and copy them to another file",
+  "description": "Transfer constants from one file and copy them to another file",
+  "repository": "https://github.com/calebmchenry/constantine",
   "main": "dist/lib/index.js",
   "bin": "dist/bin/index.js",
-  "files": ["lib/**/*", "README.md"],
+  "files": [
+    "dist/**/*",
+    "README.md"
+  ],
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
     "build": "tsc",
-    "lint": "eslint src/**/*/ts"
+    "build:watch": "tsc -w",
+    "lint": "eslint src/**/*.ts",
+    "test": "jest",
+    "test:watch": "jest --watch"
   },
   "keywords": [
     "constants",
@@ -32,6 +38,10 @@
     "eslint-plugin-prettier": "^3.1.1",
     "jest": "^24.9.0",
     "prettier": "^1.18.2",
+    "ts-jest": "^24.1.0",
     "typescript": "^3.6.4"
+  },
+  "dependencies": {
+    "commander": "^3.0.2"
   }
 }

@@ -1,5 +1,15 @@
-console.log('Hello! Thank you for you interest in constantine.\n');
-console.log('This npm package is still a work in progress.');
-console.log(
-    'You can check out the progress at https://www.github.com/calebmchenry/constantine'
-);
+#!/usr/bin/env node
+import program from 'commander';
+import { copy } from '../lib/index';
+
+const pkg = require('../../package.json');
+
+program
+    .version(pkg.version)
+    .option('-f, --from', 'file to copy from')
+    .option('-t, --to', 'file to copy to')
+    .action(cmd => {
+        copy(cmd.from).to(cmd.to);
+    });
+
+program.parse(process.argv);

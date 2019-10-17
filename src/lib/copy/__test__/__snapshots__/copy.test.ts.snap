@@ -1,0 +1,17 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`copies java file to js file 1`] = `
+"export const FOO = \\"/foo\\";
+export const FOO_BAR_BAZ_MULTIPLE_WORDS = \\"/foo/bar/baz/multiple/words\\";
+export const FOO_101_BAR = \\"/foo/101/bar\\";
+
+"
+`;
+
+exports[`copies js file to another js file 1`] = `
+"export const FOO = \\"/foo\\";
+export const FOO_BAR_BAZ_MULTIPLE_WORDS = \\"/foo/bar/baz/multiple/words\\";
+export const FOO_101_BAR = \\"/foo/101/bar\\";
+
+"
+`;
