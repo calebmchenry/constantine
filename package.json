@@ -1,15 +1,17 @@
 {
-  "name": "constants-copier",
+  "name": "constantine",
   "version": "0.0.0",
   "description": "Take constants from one file and copy them to another file",
-  "main": "lib/index.js",
-  "bin": "bin/index.js",
+  "main": "dist/lib/index.js",
+  "bin": "dist/bin/index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "tsc"
   },
   "keywords": [
     "constants",
-    "copy"
+    "copy",
+    "languages"
   ],
   "author": {
     "name": "Caleb McHenry",
