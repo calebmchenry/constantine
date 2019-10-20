@@ -21,7 +21,6 @@ test('copies java file to js file', () => {
     let toFileContent;
     mockedWriteFileSync.mockImplementation(
         (_path: string, fileContent: string) => {
-            console.log('mock', fileContent);
             toFileContent = fileContent;
         }
     );
