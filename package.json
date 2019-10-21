@@ -1,6 +1,6 @@
 {
   "name": "constantine",
-  "version": "0.0.0",
+  "version": "0.0.2",
   "description": "Transfer constants from one file and copy them to another file",
   "repository": "https://github.com/calebmchenry/constantine",
   "main": "dist/lib/index.js",
@@ -10,11 +10,14 @@
     "README.md"
   ],
   "scripts": {
+    "bin": "node dist/bin/index.js",
     "build": "tsc",
     "build:watch": "tsc -w",
+    "clean": "rm -rf dist",
     "lint": "eslint src/**/*.ts",
-    "test": "jest",
-    "test:watch": "jest --watch"
+    "test": "npm run lint && jest",
+    "test:watch": "jest --watch",
+    "deploy": "npm test && npm run clean && npm run build && npm publish"
   },
   "keywords": [
     "constants",

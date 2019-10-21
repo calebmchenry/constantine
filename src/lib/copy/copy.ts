@@ -11,7 +11,7 @@ function makeToFn(variableMap: any) {
         const fileContent = generateFn(variableMap);
 
         // write to file
-        writeFileSync(path, fileContent);
+        writeFileSync(path, fileContent, { flag: 'w+' });
     };
 }
 
