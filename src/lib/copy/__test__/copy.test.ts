@@ -4,7 +4,7 @@ import { copy } from '../copy';
 const mockedWriteFileSync = jest.fn();
 fs.writeFileSync = mockedWriteFileSync;
 
-test('copies js file to another js file', () => {
+test('copies js constants to js constants', () => {
     let toFileContent;
     mockedWriteFileSync.mockImplementation(
         (_path: string, fileContent: string) => {
@@ -17,7 +17,7 @@ test('copies js file to another js file', () => {
     expect(toFileContent).toMatchSnapshot();
 });
 
-test('copies java file to js file', () => {
+test('copies java constants to js constants', () => {
     let toFileContent;
     mockedWriteFileSync.mockImplementation(
         (_path: string, fileContent: string) => {

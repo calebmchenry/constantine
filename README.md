@@ -93,8 +93,8 @@ copy(srcFile).with(reverseTransformer).to(targetFile);
 
 | Language   | From   | To       |
 |------------|--------|----------|
-| javascript | ✅     | ✅       |
-| java       | ✅     | ❓       |
+| javascript | 🛠️     | 🛠️       |
+| java       | 🛠️     | ❓       |
 | go         | ❓     | ❓       |
 | python     | ❓     | ❓       |
 
