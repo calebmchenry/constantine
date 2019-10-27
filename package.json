@@ -1,7 +1,7 @@
 {
   "name": "constantine",
-  "version": "0.1.0",
-  "description": "Transfer constants from one file and copy them to another file",
+  "version": "0.2.0",
+  "description": "Copy constants from one language to another",
   "repository": "https://github.com/calebmchenry/constantine",
   "main": "dist/lib/index.js",
   "bin": "dist/bin/index.js",

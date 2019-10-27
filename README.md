@@ -83,6 +83,41 @@ copy(srcFile).with(reverseTransformer).to(targetFile);
 
 **Note:** the cli does not support variable name transformers
 
+With this java file as input
+
+```java
+package foo;
+public class RestConstants {
+    // path params
+    public static final String FIZZ_PARAM = "fizz";
+    public static final String BAZ_PARAM="baz";
+
+    // paths
+    public static String FOO = "/foo";
+    static final String FOO_BAR = "/foo/bar";
+    static String FOO_101_BAR = "/foo/101/bar";
+    // public static final String COMMENTED_CONSTANT = "/commented/constant";
+    /**
+    * export const COMMENTED_CONSTANT = "/commented/constant";
+    */
+    public static final String FOO_FIZZ = FOO + "/{" + FIZZ_PARAM + "}";
+    public static final String POW = "/pow/"+BAZ_PARAM;
+}
+
+```
+
+This javascript file will be outputted
+
+```javascript
+export const FIZZ_PARAM = "fizz";
+export const BAZ_PARAM = "baz";
+export const FOO = "/foo";
+export const FOO_BAR = "/foo/bar";
+export const FOO_101_BAR = "/foo/101/bar";
+export const FOO_FIZZ = FOO + "/{" + FIZZ_PARAM + "}";
+export const POW = "/pow/"+BAZ_PARAM;
+```
+
 ## Language Support
 
 ✅ - Done

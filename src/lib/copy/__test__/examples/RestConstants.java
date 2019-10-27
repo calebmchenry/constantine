@@ -1,3 +1,4 @@
+package foo;
 public class RestConstants {
     // path params
     public static final String FIZZ_PARAM = "fizz";
